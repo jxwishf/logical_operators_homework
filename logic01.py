@@ -1,11 +1,5 @@
-def main(a,b,c):
-    """
-    Given three integers a, b, c,  check the following statement "The number b is between a and c".
-    Args:
-        a(int): parameter a
-        b(int): parameter b
-        c(int): parameter c
-    Returns:
-        bool: answer
-    """
-    return
+def fu(a, b, c):
+    return a <= b <= c or c <= b <= a
+
+print(fu(5, 7, 10))  # True
+print(fu(10, 7, 5))  # True
